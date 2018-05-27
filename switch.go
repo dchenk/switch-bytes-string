@@ -46,3 +46,16 @@ func Bts(s []byte) string {
 		return "-----"
 	}
 }
+
+func BtsConst(s []byte) string {
+	switch string(s) {
+	case strShort:
+		return "---"
+	case strMedium:
+		return "---------"
+	case strLong:
+		return "------"
+	default:
+		return "-----"
+	}
+}
